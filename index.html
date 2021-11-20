@@ -10,8 +10,17 @@
 <body>
     
     <div class="container">
+        <i class="icon">+</i>
         <h1 class="title">Inaotomba Design</h1>
+        <div class="cursor"></div>
     </div>
-
+    
+    <script>
+        const cursor = document.querySelector(".cursor");
+        document.addEventListener('mousemove',(e)=>{
+            cursor.style.left = e.pageX +'px';
+            cursor.style.top = e.pageY +'px';
+        })
+    </script>
 </body>
 </html>
